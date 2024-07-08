@@ -1,13 +1,13 @@
 # Microservice
 
-This repository contains a basic microservice that simulates an ordering system. It is developed in Node.js and can run in a Docker container.
+This repository contains three basic microservices that simulate an ordering system. It is developed in Node.js and can run in a Docker container.
 
 ### Product Service
 
-- **Dwriting**: Manage products.
+- **Dwriting**: Manage orders.
 - **Endpoints**:
-  - `GET /products`: Returns a list of all products.
-  - `GET /products/:id`: Returns the details of a specific product.
+  - `GET /products`: Returns a list of all orders.
+  - `GET /products/:id`: Returns the details of a specific order.
 
 ## Project Configuration
 
@@ -27,7 +27,11 @@ For each microservice, follow these steps:
 3. Install Dependency:
       npm install
 4. Build and run the Docker container:
-      docker build -t microservice1 .
+      docker build -t microservice1 
       docker run -d -p 3002:3002 microservice1
+5. Run the project:
+      node index.js
+6. URL:
+      http://localhost:3002/orders
 
 
