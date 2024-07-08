@@ -31,10 +31,10 @@ jobs:
         context: ./
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/${{ github.repository }}:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/microservice1:latest
 
     - name: Deploy to Smartdock
       run: |
-        docker pull ${{ secrets.DOCKER_USERNAME }}/${{ github.repository }}:latest
-        docker tag ${{ secrets.DOCKER_USERNAME }}/${{ github.repository }}:latest smartdock/${{ github.repository }}:latest
-        docker push smartdock/${{ github.repository }}:latest
+        docker pull ${{ secrets.DOCKER_USERNAME }}/microservice1:latest
+        docker tag ${{ secrets.DOCKER_USERNAME }}/microservice1:latest smartdock/microservice1:latest
+        docker push smartdock/microservice1:latest
