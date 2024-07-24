@@ -1,13 +1,13 @@
 # Microservice
 
-This repository contains three basic microservices that simulate an ordering system. It is developed in Node.js and can run in a Docker container.
+This repository simulates an availability system. It is developed in Node.js and can run in a Docker container.
 
 ### Product Service
 
 - **Dwriting**: Manage orders.
 - **Endpoints**:
-  - `GET /products`: Returns a list of all orders.
-  - `GET /products/:id`: Returns the details of a specific order.
+  - `GET /availability`: Returns a list of all availability.
+  - `GET /availability/:id`: Returns the details of a specific availability.
 
 ## Project Configuration
 
